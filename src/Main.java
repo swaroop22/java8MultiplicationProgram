@@ -20,6 +20,9 @@ public class Main {
       System.out.println("streams"+c);
         System.out.println("Hello World!");
         
+         List<String> alpha = Arrays.asList("a", "b", "c", "d");
+
+        
         List<String> alphaUpper = new ArrayList<>();
         for (String s : alpha) {
             alphaUpper.add(s.toUpperCase());
