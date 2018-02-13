@@ -20,7 +20,7 @@ public class Main {
       System.out.println("streams"+c);
         System.out.println("Hello World!");
         
-         List<String> alpha = Arrays.asList("a", "b", "c", "d");
+         List<String> alpha = Arrays.asList("alpha", "bob", "caught", "done");
 
         
         List<String> alphaUpper = new ArrayList<>();
@@ -28,16 +28,16 @@ public class Main {
             alphaUpper.add(s.toUpperCase());
         }
 
-        System.out.println(alpha); //[a, b, c, d]
-        System.out.println(alphaUpper); //[A, B, C, D]
+        System.out.println(alpha); 
+        System.out.println(alphaUpper); 
 
         // Java 8
         List<String> collect = alpha.stream().map(String::toUpperCase).collect(Collectors.toList());
-        System.out.println(collect); //[A, B, C, D]
+        System.out.println(collect); 
 
         // Extra, streams apply to any data type.
         List<Integer> num = Arrays.asList(1,2,3,4,5);
         List<Integer> collect1 = num.stream().map(n -> n * 2).collect(Collectors.toList());
-        System.out.println(collect1); //[2, 4, 6, 8, 10]
+        System.out.println(collect1); 
     }
 }
